@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: dockerspringpostgres
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://dpg-cnlu4luv3ddc73fje2jg-a.oregon-postgres.render.com:5432/test_funv
+    username: test_funv_user
+    password: 6wrsPTzZywLpOuyo471bMX8ZrRBNLs3M
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
